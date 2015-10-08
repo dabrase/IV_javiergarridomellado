@@ -1,4 +1,17 @@
-# IV_javiergarridomellado
-Nombre del Proyecto: ProyIVDAI_FJGM
+# ProyIVDAI_FJGM
 
-Infraestructura Virtual
+##Introducción
+Se trata de un proyecto que será llevado a lo largo del año conjuntamente con la asignatura de Diseño de Aplicaciones para Internet. Está basado en un desarrollo web con un framework de alto nivel (Django) donde se interacciona con varios usuarios.
+
+##Seguridad
+
+Respecto a la seguridad se implementará de manera que los datos y credenciales de los usuarios queden salvaguardados de cualquier ataque, para ello será necesario que estos esten separados.
+
+##Infraestructura
+
+Se creará en la nube la infraestructura necesaria para la aplicación, siendo necesario servidores web con su correspondiente balanceador y servidores de bases de datos MySQL replicadas.
+
+Resumen:
+-	1.Sistema web donde interaccionan varios usuarios.
+-	2.Servidores web con su correspondiente balanceador.
+-	3.Base de datos replicadas.
