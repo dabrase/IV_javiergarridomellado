@@ -1,5 +1,5 @@
 # ProyIVDAI_FJGM
-
+Francisco Javier Garrido Mellado
 ##Introducción
 Se trata de un proyecto que será llevado a lo largo del año conjuntamente con la asignatura de Diseño de Aplicaciones para Internet. Está basado en un desarrollo web con un framework de alto nivel (Django) donde se interacciona con varios usuarios.
 
