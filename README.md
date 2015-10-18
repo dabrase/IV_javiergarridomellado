@@ -15,3 +15,7 @@ Resumen:
 -	1.Sistema web donde interaccionan varios usuarios.
 -	2.Servidores web con su correspondiente balanceador.
 -	3.Base de datos replicadas.
+
+Inscrito en el certamen:
+
+![foto](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/Pantallazo-Gracias%20-%20Chromium_zpsjdau6lfd.png)
