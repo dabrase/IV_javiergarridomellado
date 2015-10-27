@@ -5,7 +5,7 @@ python:
 install:
  - python apuestas/setup.py install
 
-# command to run tests para django
+# command to run tests para django python
 script:
  - cd apuestas;cd apu
  - python manage.py test apu
