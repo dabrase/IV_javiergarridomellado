@@ -1,3 +1,5 @@
+![travis](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado.svg?branch=master)
+
 # ProyIVDAI_FJGM
 Francisco Javier Garrido Mellado
 ##Introducción
@@ -19,3 +21,16 @@ Resumen:
 Inscrito en el certamen:
 
 ![foto](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/Pantallazo-Gracias%20-%20Chromium_zpsjdau6lfd.png)
+
+#Segundo hito
+
+##Integración continua
+
+Se ha usado Travis para la aplicación continua ya que soporta el lenguaje de programación utilizado y permite testear el repositorio de manera facil.
+
+
+##Desarrollo basado en pruebas
+
+Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el siguiente comando:
+
+**python manage.py test** ó **python manage.py test nombreaplicacion**
