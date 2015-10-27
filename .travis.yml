@@ -7,5 +7,5 @@ install:
 
 # command to run tests para django python
 script:
- - cd apuestas;cd apu
+ - cd apuestas
  - python manage.py test apu
