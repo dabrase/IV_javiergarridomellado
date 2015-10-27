@@ -34,3 +34,7 @@ Se ha usado Travis para la aplicación continua ya que soporta el lenguaje de pr
 Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el siguiente comando:
 
 **python manage.py test** ó **python manage.py test nombreaplicacion**
+
+##Generacion de Documentación
+- Ingresar en el directorio **apu**
+- Ejecutar en el terminal **epydoc --html views.py models.py**
