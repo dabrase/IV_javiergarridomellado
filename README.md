@@ -36,5 +36,5 @@ Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el s
 **python manage.py test** ó **python manage.py test nombreaplicacion**
 
 ##Generacion de Documentación
-- Ingresar en el directorio **apu**
+- Ingresar en el directorio **apuestas/apu**
 - Ejecutar en el terminal **epydoc --html views.py models.py**
