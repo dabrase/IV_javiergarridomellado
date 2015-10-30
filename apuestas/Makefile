@@ -1,4 +1,5 @@
-#Makefile FJGM segundo hito
+#Makefile FJGM segundo hito 
+#clean install test run doc
 
 clean:
 	- rm -rf *~*
