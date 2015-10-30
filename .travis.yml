@@ -6,6 +6,7 @@ before_install:
 # command to install dependencies
 install:
  - make install
+ - make doc
 
 # command to run tests para django python
 script:
