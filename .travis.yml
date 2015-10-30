@@ -1,11 +1,13 @@
 language: python
 python:
  - "2.7"
+before_install:
+ - cd apuestas
 # command to install dependencies
 install:
- - python apuestas/setup.py install
+ - make install
 
 # command to run tests para django python
 script:
- - cd apuestas
- - python manage.py test apu
+ - make test
+
