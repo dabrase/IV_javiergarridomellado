@@ -24,16 +24,35 @@ Inscrito en el certamen:
 
 #Segundo hito
 
-##Integración continua
+## Tecnologías utilizadas
 
-Se ha usado Travis para la aplicación continua ya que soporta el lenguaje de programación utilizado y permite testear el repositorio de manera facil.
+- Se usa framework **Django**, por tanto se desarrolla la aplicación en **Python**
+- Base de datos **SQLite**
 
+##Herramienta de Construcción
+
+Python permite como herramienta de construcción el uso de archivos **Makefile**, en mi caso muy similar a lo que se hace en **C** pero enfocado al lenguaje y proyecto utilizado.
+- **clean** ,para borrar archivos residuales que se generan como son los *.pyc* y *~py*
+- **install** ,con lo que se instala dependencias y paqueteria necesaria para la aplicación.
+- **test** , el cual testea la aplicación
+- **run** , ejecuta la aplicación.
 
 ##Desarrollo basado en pruebas
 
 Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el siguiente comando:
 
 **python manage.py test** ó **python manage.py test nombreaplicacion**
+
+Aunque para facilitar la elaboracion del testeo lo he incluido dentro del archivo makefile de manera que ejecutando **make test** lo realice. En mi caso el testeo se realiza sobre el modelo de datos que se va a usar
+
+##Integración continua
+
+Se ha usado Travis para la aplicación continua ya que soporta el lenguaje de programación utilizado y permite testear el repositorio de manera facil.
+En mi caso los pasos seguidos han sido:
+- Registrarse en la página y sincronizar el repositorio.
+- Tener un archivo de testeo de la aplicación.
+- Tener archivo makefile que facilite la automatización del testeo,limpieza de archivos, etc.
+- Tener un archivo .yml donde se le indica los pasos a seguir para cumplir con la integración continua de manera correcta y eficiente.
 
 ##Generacion de Documentación
 - Ingresar en el directorio **apuestas/apu**
