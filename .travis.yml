@@ -6,8 +6,6 @@ before_install:
 # command to install dependencies
 install:
  - make install
- - apt-get install python-epydoc
- - make doc
 
 # command to run tests para django python
 script:
