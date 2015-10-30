@@ -38,6 +38,14 @@ Python permite como herramienta de construcción el uso de archivos **Makefile**
 - **run** , ejecuta la aplicación.
 - **doc** , genera la documentación correspondiente.
 
+###Comandos:
+```
+make clean
+make test
+make run
+make doc
+```
+
 ##Desarrollo basado en pruebas
 
 Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el siguiente comando:
@@ -54,6 +62,7 @@ En mi caso los pasos seguidos han sido:
 - Tener un archivo de testeo de la aplicación.
 - Tener archivo makefile que facilite la automatización del testeo,limpieza de archivos, etc.
 - Tener un archivo .yml donde se le indica los pasos a seguir para cumplir con la integración continua de manera correcta y eficiente.
+- En *github* en el apartado *Setting/Webhooks&services* hay que activar el apartado de *Travis*, seguidamente se pulsa *Test Service*.
 
 ##Generacion de Documentación
 - Ingresar en el directorio **apuestas/apu**
