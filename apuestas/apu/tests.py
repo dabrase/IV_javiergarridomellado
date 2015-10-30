@@ -14,3 +14,4 @@ class PersonaMethodTests(TestCase):
 		self.assertEqual(per.pais,'Holanda')
 		self.assertEqual(per.equipo,'Betis')
 		self.assertEqual(per.hobbies,'musica')
+		print("Testeo correcto.")
