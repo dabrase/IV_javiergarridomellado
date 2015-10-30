@@ -1,4 +1,4 @@
-#Makefile FJGM
+#Makefile FJGM segundo hito
 
 clean:
 	- rm -rf *~*
