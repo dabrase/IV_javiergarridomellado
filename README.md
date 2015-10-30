@@ -36,6 +36,7 @@ Python permite como herramienta de construcción el uso de archivos **Makefile**
 - **install** ,con lo que se instala dependencias y paqueteria necesaria para la aplicación.
 - **test** , el cual testea la aplicación
 - **run** , ejecuta la aplicación.
+- **doc** , genera la documentación correspondiente.
 
 ##Desarrollo basado en pruebas
 
@@ -43,7 +44,7 @@ Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el s
 
 **python manage.py test** ó **python manage.py test nombreaplicacion**
 
-Aunque para facilitar la elaboracion del testeo lo he incluido dentro del archivo makefile de manera que ejecutando **make test** lo realice. En mi caso el testeo se realiza sobre el modelo de datos que se va a usar
+Aunque para facilitar la elaboracion del testeo lo he incluido dentro del archivo makefile de manera que ejecutando **make test** lo realice. En mi caso el testeo se realiza sobre el modelo de datos que se va a usar.
 
 ##Integración continua
 
@@ -57,3 +58,4 @@ En mi caso los pasos seguidos han sido:
 ##Generacion de Documentación
 - Ingresar en el directorio **apuestas/apu**
 - Ejecutar en el terminal **epydoc --html views.py models.py**
+- O usar la orden **make doc**

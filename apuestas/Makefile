@@ -4,11 +4,13 @@ clean:
 	- rm -rf *~*
 	- find . -name '*.pyc' -exec rm {} \;
 
-install: clean
+install: 
 	python setup.py install
 	
-test: clean
+test: 
 	python manage.py test
 	
 run:
 	python manage.py runserver
+doc:
+	epydoc --html apu/views.py apu/models.py
