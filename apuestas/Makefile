@@ -14,4 +14,4 @@ test:
 run:
 	python manage.py runserver
 doc:
-	epydoc --html apu/views.py apu/models.py
+	epydoc --html apu/*.py 
