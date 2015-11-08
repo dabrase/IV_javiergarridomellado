@@ -7,19 +7,19 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
+        ('apu', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Persona',
+            name='Apuesta',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('nombre', models.CharField(max_length=50)),
-                ('dni', models.CharField(max_length=9)),
-                ('pais', models.CharField(max_length=20)),
-                ('equipo', models.CharField(max_length=10)),
-                ('hobbies', models.TextField(max_length=200)),
-                ('fondo' ,  models.IntegerField()),
+                ('equipoa', models.CharField(max_length=50)),
+                ('equipob', models.CharField(max_length=50)),
+                ('capital', models.IntegerField()),
+                ('victoria', models.CharField(max_length=1)),
+                ('apostador', models.ForeignKey('Persona')),
             ],
         ),
     ]

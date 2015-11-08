@@ -2,8 +2,11 @@
 <head> 
     <title>Buscar</title> 
 </head> 
-<body> 
-    <form action="/buscar/" method="get">
+<body>
+{% if error %} 
+        <p style="color: red;">Por favor introduce un término de búsqueda.</p> 
+{% endif %}  
+    <form action="" method="get">
 		DNI: 
         <input type="text" name="dni">
 		<br>
