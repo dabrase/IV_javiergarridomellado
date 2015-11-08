@@ -19,7 +19,6 @@ class Migration(migrations.Migration):
                 ('pais', models.CharField(max_length=20)),
                 ('equipo', models.CharField(max_length=10)),
                 ('hobbies', models.TextField(max_length=200)),
-                ('fondo' ,  models.IntegerField()),
             ],
         ),
     ]
