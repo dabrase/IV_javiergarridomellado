@@ -5,6 +5,7 @@ before_install:
  - cd apuestas
 # command to install dependencies
 install:
+ - pip install djangorestframework
  - make install
 
 # command to run tests para django python
