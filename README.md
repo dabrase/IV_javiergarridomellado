@@ -31,20 +31,9 @@ Inscrito en el certamen:
 
 ##Herramienta de Construcción
 
-Python permite como herramienta de construcción el uso de archivos **Makefile**, en mi caso muy similar a lo que se hace en **C** pero enfocado al lenguaje y proyecto utilizado.
-- **clean** ,para borrar archivos residuales que se generan como son los *.pyc* y *~py*
-- **install** ,con lo que se instala dependencias y paqueteria necesaria para la aplicación.
-- **test** , el cual testea la aplicación
-- **run** , ejecuta la aplicación.
-- **doc** , genera la documentación correspondiente.
+Python permite como herramienta de construcción el uso de archivos *manage.py* y *setup.py* , son los que he usado en mi caso, puede verse en travis como lo uso para el testeo.
 
-###Comandos:
-```
-make clean
-make test
-make run
-make doc
-```
+
 
 ##Desarrollo basado en pruebas
 
@@ -60,11 +49,11 @@ Se ha usado Travis para la aplicación continua ya que soporta el lenguaje de pr
 En mi caso los pasos seguidos han sido:
 - Registrarse en la página y sincronizar el repositorio.
 - Tener un archivo de testeo de la aplicación.
-- Tener archivo makefile que facilite la automatización del testeo,limpieza de archivos, etc.
+- Tener archivo manage.py que facilite la automatización del testeo.
 - Tener un archivo .yml donde se le indica los pasos a seguir para cumplir con la integración continua de manera correcta y eficiente.
 - En *github* en el apartado *Setting/Webhooks&services* hay que activar el apartado de *Travis*, seguidamente se pulsa *Test Service*.
 
 ##Generacion de Documentación
-- Ingresar en el directorio **apuestas/apu**
+- Ingresar en el directorio **/apu**
 - Ejecutar en el terminal **epydoc --html views.py models.py**
-- O usar la orden **make doc**
+
