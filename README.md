@@ -1,4 +1,4 @@
-![travis](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado.svg?branch=master)
+[![Build Status](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado.svg?branch=master)](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado)
 
 # ProyIVDAI_FJGM
 Francisco Javier Garrido Mellado
