@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado.svg?branch=master)](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado)
 
+
 # ProyIVDAI_FJGM
 Francisco Javier Garrido Mellado
 ##Introducción
@@ -18,7 +19,7 @@ Resumen:
 -	2.Servidores web con su correspondiente balanceador.
 -	3.Base de datos replicadas.
 
-Inscrito en el certamen:
+Inscrito en el certamen de SL:
 
 ![foto](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/Pantallazo-Gracias%20-%20Chromium_zpsjdau6lfd.png)
 
