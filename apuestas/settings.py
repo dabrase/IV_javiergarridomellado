@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
+import dj_database_url
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -25,7 +29,7 @@ SECRET_KEY = '2rrx#9oc7(-agc56zea(nrb-2dmcdv0$7=e5qr%t%x8%&=sdt)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'rest_framework',
 	'apu',
 )
 
@@ -82,7 +87,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+ON_HEROKU = os.environ.get('PORT')
+if ON_HEROKU:
+	DATABASE_URL='postgres://kytzveedsclzaf:eIJAAuElYvSxPK-vmSdXG9Hjv8@ec2-107-21-219-235.compute-1.amazonaws.com:5432/df9sfr7a9b8vjf'
+	DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -101,4 +109,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+#STATIC_URL = '/static/'
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
