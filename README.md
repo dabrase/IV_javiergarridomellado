@@ -107,7 +107,9 @@ git push heroku master
 
 La aplicacion [desplegada](https://apuestas.herokuapp.com/)
 
-Se añade ademas un proceso de integración continua junto al despliegue mediante [Snap-CI](https://snap-ci.com)
+Se añade ademas un proceso de integración continua junto al despliegue mediante [Snap-CI](https://snap-ci.com).Desde la interfaz web realizo la siguiente configuración:
+
+![paso1](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snap1_zpsgowrqt6s.png)
 
 
 
