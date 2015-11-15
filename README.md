@@ -33,11 +33,12 @@ Inscrito en el certamen de SL:
 ## Tecnologías utilizadas
 
 - Se usa framework **Django**, por tanto se desarrolla la aplicación en **Python**
-- Base de datos **SQLite**
+- Base de datos **SQLite** para pruebas en local.
+- Base de datos **Postgre** en el PaaS Heroku.
 
 ##Herramienta de Construcción
 
-Python permite como herramienta de construcción el uso de archivos *manage.py* y *setup.py* , son los que he usado en mi caso, puede verse en travis como lo uso para el testeo.
+Python permite como herramienta de construcción el uso de archivos *manage.py* y *setup.py* , son los que he usado en mi caso, puede verse en travis como lo uso para la construccion y el posterior testeo.
 
 
 ##Desarrollo basado en pruebas
@@ -48,9 +49,11 @@ Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el s
 
 Aunque para facilitar la elaboracion del testeo lo he incluido dentro del archivo makefile de manera que ejecutando **make test** lo realice. En mi caso el testeo se realiza sobre el modelo de datos que se va a usar.
 
+Esto se usa tanto para **travis** como para **snap-ci**.
+
 ##Integración continua
 
-Se ha usado Travis para la aplicación continua ya que soporta el lenguaje de programación utilizado y permite testear el repositorio de manera facil.
+Se ha usado Travis para la integración continua ya que soporta el lenguaje de programación utilizado y permite testear el repositorio de manera facil.
 En mi caso los pasos seguidos han sido:
 - Registrarse en la página y sincronizar el repositorio.
 - Tener un archivo de testeo de la aplicación.
@@ -93,7 +96,7 @@ wheel==0.26.0
 whitenoise==2.0.4
 wsgiref==0.1.2
 ```
-
+Puede verse que tambien se dispone de **whitenoise** para archivos estaticos, queda definido en **setting.py** para su uso si se requiere.
 Tras el registro en Heroku hay que ejecutar una serie de comandos para tener apunto el despliegue:
 ```
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh   
@@ -104,6 +107,56 @@ git commit -m "subida"
 heroku apps:rename apuestas
 git push heroku master
 ```
+He usado la base de datos **Postgre** que proporciona **Heroku** para el despliegue, en local sigo usando **SQLite**, lo he realizado con estos pasos:
+- Teniendo *psycopg2* para poder usar dicha base de datos.
+- Tener instalado *dj_database_url*, tambien necesario para Postgre.
+- Abrir el archivo *setting.py* del proyecto y añadir lo siguiente( sacado del siguiente [enlace](http://stackoverflow.com/questions/26080303/improperlyconfigured-settings-databases-is-improperly-configured-please-supply):
+```
+import dj_database_url
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+ALLOWED_HOSTS = ['*']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+ON_HEROKU = os.environ.get('PORT')
+if ON_HEROKU:
+	DATABASE_URL='postgres://url_de_mi_bd'
+	DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+```
+- En **wsgi.py** poner lo siguiente:
+```
+import os
+
+from django.core.wsgi import get_wsgi_application
+from dj_static import Cling
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "apuestas.settings")
+
+#from whitenoise.django import DjangoWhiteNoise
+application = get_wsgi_application()
+
+
+application = Cling(get_wsgi_application())
+#application = DjangoWhiteNoise(application)
+```
+- Notar que en DATABASE_URL se pone la url que sale para la base de datos postgre que Heroku nos ofrece, hay que darle a show para verlo.
+- Subir cambios a github y hacer **git push heroku master**.
+- Ejecutar los comando **heroku run python manage.py makemigrations**, **heroku run python manage.py migrate** y **heroku run python manage.py createsuperuser** .
+ 
 
 La aplicacion [desplegada](https://apuestas.herokuapp.com/)
 
@@ -121,7 +174,7 @@ Se añade ademas un proceso de integración continua junto al despliegue mediant
 
 ![resultados3](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snapdespliegue2_zpsgmdw0np4.png)
 
-Con todo esto queda realizado la integración continua cada vez que se haga un push al repositorio, se pasan los tests y si son satisfactorio se levanta la app.
+Con todo esto queda realizado la integración continua, cada vez que se haga un push al repositorio se pasan los tests y si son satisfactorio se levanta la app.
 
 Un avance significativo es el de usar JSON con sus correspondientes tests.Puede verse la clase en el archivo *views.py*, su uso en *tests.py* y el correspondiente archivo *serializers.py*
 
