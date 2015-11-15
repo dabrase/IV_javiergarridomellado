@@ -179,4 +179,4 @@ Con todo esto queda realizado la integración continua, cada vez que se haga un 
 Un avance significativo es el de usar JSON con sus correspondientes tests.Puede verse la clase en el archivo *views.py*, su uso en *tests.py* y el correspondiente archivo *serializers.py*
 
 
-
+#
