@@ -155,7 +155,7 @@ application = Cling(get_wsgi_application())
 ```
 - Notar que en DATABASE_URL se pone la url que sale para la base de datos postgre que Heroku nos ofrece, hay que darle a show para verlo.
 - Subir cambios a github y hacer **git push heroku master**.
-- Ejecutar los comando **heroku run python manage.py makemigrations**, **heroku run python manage.py migrate** y **heroku run python manage.py createsuperuser** .
+- Ejecutar los comando **heroku run python manage.py makemigrations**, **heroku run python manage.py migrate** y **heroku run python manage.py createsuperuser** para sincronizar la base de datos Postgre.
  
 
 La aplicacion [desplegada](https://apuestas.herokuapp.com/)

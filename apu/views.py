@@ -4,7 +4,7 @@ from apu.models import Persona
 from django.views.generic import CreateView, TemplateView, ListView
 import datetime
 from django.views import generic
-from django.core.mail import send_mail 
+from django.core.mail import send_mail  
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
