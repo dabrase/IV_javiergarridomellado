@@ -34,7 +34,7 @@ Inscrito en el certamen de SL:
 
 - Se usa framework **Django**, por tanto se desarrolla la aplicación en **Python**
 - Base de datos **SQLite** para pruebas en local.
-- Base de datos **Postgre** en el PaaS Heroku.
+- Base de datos **PostgreSQL** en el PaaS Heroku.
 
 ##Herramienta de Construcción
 
@@ -107,9 +107,9 @@ git commit -m "subida"
 heroku apps:rename apuestas
 git push heroku master
 ```
-He usado la base de datos **Postgre** que proporciona **Heroku** para el despliegue, en local sigo usando **SQLite**, lo he realizado con estos pasos:
+He usado la base de datos **PostgreSQL** que proporciona **Heroku** para el despliegue, en local sigo usando **SQLite**, lo he realizado con estos pasos:
 - Teniendo *psycopg2* para poder usar dicha base de datos.
-- Tener instalado *dj_database_url*, tambien necesario para Postgre.
+- Tener instalado *dj_database_url*, tambien necesario para PostgreSQL.
 - Abrir el archivo *setting.py* del proyecto y añadir lo siguiente( sacado del siguiente [enlace](http://stackoverflow.com/questions/26080303/improperlyconfigured-settings-databases-is-improperly-configured-please-supply):
 ```
 import dj_database_url
@@ -153,9 +153,9 @@ application = get_wsgi_application()
 application = Cling(get_wsgi_application())
 #application = DjangoWhiteNoise(application)
 ```
-- Notar que en DATABASE_URL se pone la url que sale para la base de datos postgre que Heroku nos ofrece, hay que darle a show para verlo.
+- Notar que en DATABASE_URL se pone la url que sale para la base de datos postgreSQL que Heroku nos ofrece, hay que darle a show para verlo.
 - Subir cambios a github y hacer **git push heroku master**.
-- Ejecutar los comando **heroku run python manage.py makemigrations**, **heroku run python manage.py migrate** y **heroku run python manage.py createsuperuser** para sincronizar la base de datos Postgre.
+- Ejecutar los comando **heroku run python manage.py makemigrations**, **heroku run python manage.py migrate** y **heroku run python manage.py createsuperuser** para sincronizar la base de datos PostgreSQL.
  
 
 La aplicacion [desplegada](https://apuestas.herokuapp.com/)
