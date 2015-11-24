@@ -8,7 +8,7 @@
 Francisco Javier Garrido Mellado
 
 ##Introducción Proyecto Apuestas
-Estoy haciendo una app de apuestas de futbol donde los usuarios registran unos datos basicos y disponen de un fondo para apostar, se añadiran debates, novedades sobre futbol, etc. Ahora mismo esta en fase básica.
+Estoy haciendo una app de apuestas de futbol donde los usuarios registran unos datos básicos y disponen de un fondo para apostar, se añadiran debates, novedades sobre fútbol, etc. Ahora mismo esta en fase básica.
 
 Este proyecto será llevado a lo largo del año conjuntamente con la asignatura de Diseño de Aplicaciones para Internet.
 
@@ -38,7 +38,7 @@ Inscrito en el certamen de SL:
 
 ##Herramienta de Construcción
 
-Python permite como herramienta de construcción el uso de archivos *manage.py* y *setup.py* , son los que he usado en mi caso, puede verse en travis como lo uso para la construccion y el posterior testeo.
+Python permite como herramienta de construcción el uso de archivos *manage.py* y *setup.py* , son los que he usado en mi caso, puede verse en travis como lo uso para la construcción y el posterior testeo.
 
 
 ##Desarrollo basado en pruebas
@@ -47,7 +47,7 @@ Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el s
 
 **python manage.py test** ó **python manage.py test nombreaplicacion**
 
-Aunque para facilitar la elaboracion del testeo lo he incluido dentro del archivo makefile de manera que ejecutando **make test** lo realice. En mi caso el testeo se realiza sobre el modelo de datos que se va a usar.
+Aunque para facilitar la elaboración del testeo lo he incluido dentro del archivo makefile de manera que ejecutando **make test** lo realice. En mi caso el testeo se realiza sobre el modelo de datos que se va a usar.
 
 Esto se usa tanto para **travis** como para **snap-ci**.
 
@@ -68,7 +68,7 @@ En mi caso los pasos seguidos han sido:
 ## Despliegue en un Paas Heroku
 
 Me he decantado por Heroku por la facilidad para el despliegue y porque es la que pedían en los ejercicios de la relación. Para su despliegue he necesitado de los siguientes ficheros de definición:
-- Procfile ( para que Heroku sepa que tiene que lanzar, usa gunicorn )
+- Procfile ( para desplegar la aplicación web en Heroku )
 ```
 web: gunicorn apuestas.wsgi --log-file -
 ```
@@ -107,7 +107,7 @@ git commit -m "subida"
 heroku apps:rename apuestas
 git push heroku master
 ```
-He usado la base de datos **PostgreSQL** que proporciona **Heroku** para el despliegue, en local sigo usando **SQLite**, lo he realizado con estos pasos:
+Cuando la aplicación se encuentre desplegada en Heroku usará la base de datos **PostgreSQL** que nos proporcionan( se define en setting.py, asi cuando la aplicación se encuentre en Heroku usara dicha base de datos ), en local sigo usando **SQLite**, lo he realizado con estos pasos:
 - Teniendo *psycopg2* para poder usar dicha base de datos.
 - Tener instalado *dj_database_url*, tambien necesario para PostgreSQL.
 - Abrir el archivo *setting.py* del proyecto y añadir lo siguiente( sacado del siguiente [enlace](http://stackoverflow.com/questions/26080303/improperlyconfigured-settings-databases-is-improperly-configured-please-supply):
@@ -180,7 +180,7 @@ Con todo esto queda realizado la integración continua, cada vez que se haga un 
 
 Un avance significativo es el de usar JSON con sus correspondientes tests.Puede verse la clase en el archivo *views.py*, su uso en *tests.py* y el correspondiente archivo *serializers.py*.
 
-Ademas se añaden varias vistas mas a la aplicación, puede verse en la página principal algunos enlaces que nos llevan a diferentes páginas.Consultando *urls.py* puede verse todas las páginas disponibles.
+Ademas se añaden varias vistas más a la aplicación, puede verse en la página principal algunos enlaces que nos llevan a diferentes páginas.Consultando *urls.py* puede verse todas las páginas disponibles.
 
 
 #
