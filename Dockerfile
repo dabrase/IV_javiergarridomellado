@@ -23,7 +23,7 @@ RUN sudo pip install --upgrade pip
 RUN ls
 RUN cd IV_javiergarridomellado/ && ls -l
 RUN cd IV_javiergarridomellado/ && cat requirements.txt
-RUN cd IV_javergarridomellado/ && sudo pip install -r requirements.txt
+RUN cd IV_javiergarridomellado/ && sudo pip install -r requirements.txt
 
 #Migraciones
 RUN cd IV_javiergarridomellado/ && python manage.py syncdb --noinput
