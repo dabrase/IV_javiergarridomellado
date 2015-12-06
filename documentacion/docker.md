@@ -56,3 +56,7 @@ sudo docker run -t -i javiergarridomellado/iv_javiergarridomellado:apuestas /bin
 ```
 Esto lo que hace es instalar Docker, crear el contenedor con la aplicación instalada en él y arrancar el entorno de pruebas.Solo queda ingresar en el directorio `IV_javiergarridomellado` y ejecutar `python manage.py runserver 0.0.0.0:1111`.
 Hecho esto, solo queda acceder al navegador anfitrión e introducir la IP del contenedor Docker.
+
+![automa](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/automa_zpsajhntukm.png)
+
+![navegador](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/nav_zpszfauvqbh.png)
