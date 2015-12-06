@@ -84,11 +84,12 @@ Para crear el entorno de prueba se ha provisto del archivo **docker_install_and_
 ```
 ./docker_install_and_run.sh
 ```
+[Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md)
 
 ##Generacion de Documentación
 - Ingresar en el directorio **/apu**
 - Ejecutar en el terminal **epydoc --html views.py models.py**
 
-[Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md)
+
 
 
