@@ -11,6 +11,7 @@ RUN sudo apt-get install -y git
 RUN sudo git clone https://github.com/javiergarridomellado/IV_javiergarridomellado.git
 
 # Instalar Python y PostgreSQL
+#RUN sudo apt-get install -y python
 RUN sudo apt-get install -y python-setuptools
 RUN sudo apt-get -y install python-dev
 RUN sudo apt-get -y install build-essential
