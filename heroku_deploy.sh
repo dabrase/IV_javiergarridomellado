@@ -1,6 +1,8 @@
-git clone https://github.com/javiergarridomellado/IV_javiergarridomellado.git
-cd IV_javiergarridomellado
-heroku keys:add
-heroku git:clone -a prueba
-heroku ps:scale web=1 --app prueba
-heroku open --app prueba
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh   # descargar herramienta heroku CLI
+heroku login
+heroku create
+git add .
+git commit -m "despliegue en heroku"
+git push heroku master
+heroku ps:scale web=1
+heroku open
