@@ -5,4 +5,5 @@ git add .
 git commit -m "heroku deploy"
 git push heroku master
 heroku ps:scale web=1
+heroku apps:rename ejemplo_deploy
 heroku open
