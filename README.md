@@ -183,4 +183,4 @@ Un avance significativo es el de usar JSON con sus correspondientes tests.Puede 
 Ademas se añaden varias vistas más a la aplicación, puede verse en la página principal algunos enlaces que nos llevan a diferentes páginas.Consultando *urls.py* puede verse todas las páginas disponibles.
 
 
-##
+###
