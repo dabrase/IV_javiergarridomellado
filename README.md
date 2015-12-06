@@ -1,16 +1,20 @@
+# ProyIVDAI_FJGM
+Autor: Francisco Javier Garrido Mellado
+
 [![Build Status](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado.svg?branch=master)](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado)
 
 [![Build Status](https://snap-ci.com/javiergarridomellado/IV_javiergarridomellado/branch/master/build_image)](https://snap-ci.com/javiergarridomellado/IV_javiergarridomellado/branch/master)
 
 [![Heroku](https://www.herokucdn.com/deploy/button.png)](https://apuestas.herokuapp.com/)
 
-# ProyIVDAI_FJGM
-Francisco Javier Garrido Mellado
 
 ##Introducción Proyecto Apuestas
-Estoy haciendo una app de apuestas de futbol donde los usuarios registran unos datos básicos y disponen de un fondo para apostar, se añadiran debates, novedades sobre fútbol, etc. Ahora mismo esta en fase básica.
+
+Se trata de  una aplicación de apuestas de fútbol donde los usuarios registran unos datos básicos y disponen de un fondo para apostar, se añadiran debates, novedades sobre fútbol, etc. 
 
 Este proyecto será llevado a lo largo del año conjuntamente con la asignatura de Diseño de Aplicaciones para Internet.
+
+[Inscrito en el certamen de SL](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/Pantallazo-Gracias%20-%20Chromium_zpsjdau6lfd.png)
 
 ##Seguridad
 
@@ -25,9 +29,7 @@ Resumen:
 -	2.Servidores web con su correspondiente balanceador.
 -	3.Base de datos replicadas.
 
-Inscrito en el certamen de SL:
 
-![foto](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/Pantallazo-Gracias%20-%20Chromium_zpsjdau6lfd.png)
 
 
 ## Tecnologías utilizadas
