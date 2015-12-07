@@ -100,6 +100,15 @@ Con esto nos encontramos dentro de la imagen descargada, la cual tiene la aplica
 
 ![dockerrun](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/dockerrun_zpsvewnjp9u.png)
 
+### Ejecución Online
+- Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
+- Ejecutar el archivo mediante la orden `./heroku_deploy.sh`
+- Ingresar el user/password de nuestra cuenta Heroku y automaticamente la aplicación queda desplegada.
+
+![herokudeploy](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/herokudeploy_zpsnx8ryz6s.png)
+
+![user](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/her_zpsp25ztb4u.png)
+
 ### Ejecución Local
 - Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.
 - Dar permisos de ejecución mediante la orden **chmod** al archivo [run_app.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/run_app.sh), por ejemplo `chmod 777 run_app.sh`
@@ -112,14 +121,7 @@ Con esto nos encontramos dentro de la imagen descargada, la cual tiene la aplica
 
 ![nav](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/nav_zpsx1vfvbbm.png)
 
-### Ejecución Online
-- Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
-- Ejecutar el archivo mediante la orden `./heroku_deploy.sh`
-- Ingresar el user/password de nuestra cuenta Heroku y automaticamente la aplicación queda desplegada.
 
-![herokudeploy](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/herokudeploy_zpsnx8ryz6s.png)
-
-![user](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/her_zpsp25ztb4u.png)
 
 ##Generacion de Documentación
 - Ingresar en el directorio **/apu**
