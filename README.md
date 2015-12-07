@@ -98,16 +98,28 @@ Los pasos a seguir son los siguientes:
 
 Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la aplicación dentro. Hecho esto, hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
 
+![dockerrun](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/dockerrun_zpsvewnjp9u.png)
+
 ### Ejecución Local
 - Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.
 - Dar permisos de ejecución mediante la orden **chmod** al archivo [run_app.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/run_app.sh), por ejemplo `chmod 777 run_app.sh`
 - Ejecutar el archivo mediante la orden `./run_app.sh`
 - Ingresar en el navegador anfitrión `ip_del_contenedor:8000` , con ello tendremos la aplicación desplegada.
 
+![ifconfig](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/ifconfig_zps6z0uav6o.png)
+
+![runapp](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/runapp_zpsnsa9qlud.png)
+
+![nav](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/nav_zpsx1vfvbbm.png)
+
 ### Ejecución Online
 - Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
 - Ejecutar el archivo mediante la orden `./heroku_deploy.sh`
 - Ingresar el user/password de nuestra cuenta Heroku y automaticamente la aplicación queda desplegada.
+
+![herokudeploy](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/herokudeploy_zpsnx8ryz6s.png)
+
+![user]()
 
 ##Generacion de Documentación
 - Ingresar en el directorio **/apu**
