@@ -80,7 +80,7 @@ Se usa Docker como plataforma que automatiza el despliegue de la aplicación den
 
 La imagen de la aplicación es la [siguiente](https://hub.docker.com/r/javiergarridomellado/iv_javiergarridomellado/)
 
-Para crear el entorno de prueba se ha provisto del archivo **docker_install_and_run.sh**, basta con ejecutar:
+Para crear el entorno de prueba se ha provisto del archivo **docker_install_and_run.sh**(explicado en el siguiente apartado), basta con ejecutar:
 ```
 ./docker_install_and_run.sh
 ```
@@ -96,7 +96,7 @@ Los pasos a seguir son los siguientes:
 - Dar permisos de ejecución mediante la orden **chmod**, por ejemplo `chmod 777 docker_install_and_run.sh`
 - Ejecutar el archivo mediante la orden `./docker_install_and_run.sh`
 
-Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la aplicación dentro.Hecho esto hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
+Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la aplicación dentro. Hecho esto hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
 
 ### Ejecución Local
 - Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.

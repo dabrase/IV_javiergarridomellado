@@ -1,6 +1,6 @@
 # Entorno de pruebas: [Docker](https://www.docker.com/)
 
-El primer paso para crear la imagen es definir un archivo [Dockerfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/Dockerfile), Docker usa dicho archivo para definir la imagen, en mi caso contiene lo siguiente:
+El primer paso para crear la imagen es definir un archivo [Dockerfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/Dockerfile).  Docker usa dicho archivo para definir la imagen, en mi caso contiene lo siguiente:
 ```
 FROM ubuntu:latest
 
@@ -33,7 +33,7 @@ RUN cd IV_javiergarridomellado/ && sudo pip install -r requirements.txt
 #Migraciones
 RUN cd IV_javiergarridomellado/ && python manage.py syncdb --noinput
 ```
-Después en la web de [Docker Hub](https://hub.docker.com/), se crea un "Automated Build" sobre el repositorio del proyecto, con esto comienza a crear la imagen.
+Después en la web de [Docker Hub](https://hub.docker.com/), se crea un "Automated Build" sobre el repositorio del proyecto, con esto se comienza a crear la imagen.
 
 Puede verse a continuación el repositorio enlazado y la construcción automática de la imagen:
 
