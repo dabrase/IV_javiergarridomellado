@@ -119,7 +119,7 @@ Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la apli
 
 ![herokudeploy](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/herokudeploy_zpsnx8ryz6s.png)
 
-![user]()
+![user](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/her_zpsp25ztb4u.png)
 
 ##Generacion de Documentación
 - Ingresar en el directorio **/apu**
