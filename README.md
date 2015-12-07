@@ -10,7 +10,7 @@ Autor: Francisco Javier Garrido Mellado
 
 ## Introducción Proyecto Apuestas
 
-Se trata de  una aplicación de apuestas de fútbol donde los usuarios registran unos datos básicos y disponen de un fondo para apostar, se añadiran debates, novedades sobre fútbol, etc. 
+Se trata de  una aplicación de apuestas de fútbol donde los usuarios registran unos datos básicos y disponen de un fondo para apostar, debates, novedades sobre fútbol, etc. 
 
 Este proyecto será llevado a lo largo del año conjuntamente con la asignatura de Diseño de Aplicaciones para Internet.
 
