@@ -3,9 +3,9 @@
 Para el uso de Travis los pasos seguidos han sido:
 - Registrarse en la página y sincronizar el repositorio.
 - Tener un archivo de testeo de la aplicación.
-- Tener archivo manage.py que facilite la automatización del testeo.
+- Tener un archivo manage.py que facilite la automatización del testeo.
 - Tener un archivo .yml donde se le indica los pasos a seguir para cumplir con la integración continua de manera correcta y eficiente.
-- En *github* en el apartado *Setting/Webhooks&services* hay que activar el apartado de *Travis*, seguidamente se pulsa *Test Service*.
+- En *github*, en el apartado *Setting/Webhooks&services* hay que activar el apartado de *Travis*, seguidamente se pulsa *Test Service*.
 
 El contenido del archivo *.travis.yml* es el siguiente:
 ```

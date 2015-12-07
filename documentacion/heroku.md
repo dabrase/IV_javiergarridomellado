@@ -43,7 +43,7 @@ git push heroku master
 Cuando la aplicación se encuentre desplegada en Heroku usará la base de datos **PostgreSQL** que nos proporcionan( se define en setting.py, asi cuando la aplicación se encuentre en Heroku usara dicha base de datos ), en local sigo usando **SQLite**, lo he realizado con estos pasos:
 - Teniendo *psycopg2* para poder usar dicha base de datos.
 - Tener instalado *dj_database_url*, tambien necesario para PostgreSQL.
-- Abrir el archivo *setting.py* del proyecto y añadir lo siguiente( sacado del siguiente [enlace](http://stackoverflow.com/questions/26080303/improperlyconfigured-settings-databases-is-improperly-configured-please-supply):
+- Abrir el archivo *setting.py* del proyecto y añadir lo siguiente( sacado del siguiente [enlace](http://stackoverflow.com/questions/26080303/improperlyconfigured-settings-databases-is-improperly-configured-please-supply)):
 ```
 import dj_database_url
 

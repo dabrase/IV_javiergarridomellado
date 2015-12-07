@@ -34,7 +34,7 @@ Resumen:
 
 Python permite como herramienta de construcción el uso del archivo *manage.py* , es el que he usado en mi caso, puede verse en travis y snap-ci como lo uso para la construcción y el posterior testeo.
 
-Además se añaden los archivos [docker_install_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/docker_install_and_run.sh), [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/heroku_deploy.sh) y [run_app](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/run_app.sh) para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y arranque de la aplicación en local.
+Además se añaden los archivos [docker_install_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/docker_install_and_run.sh), [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/heroku_deploy.sh) y [run_app](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/run_app.sh) para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y el arranque de la aplicación en local.
 
 ## Instalación local de la aplicación
 
@@ -49,7 +49,7 @@ $ python manage.py runserver
 
 ##Desarrollo basado en pruebas
 
-Para las pruebas he usado el sistema de testeo de Django.Basta con ejecutar el siguiente comando:
+Para las pruebas he usado el sistema de testeo de Django. Basta con ejecutar el siguiente comando:
 
 **python manage.py test** ó **python manage.py test nombreaplicacion**
 
@@ -61,7 +61,7 @@ Puede verse los correspondientes [tests](https://github.com/javiergarridomellado
 
 En este paso he elegido dos sistemas de integración continua de modo que cada cambio que se realice implique una ejecución de los tests mencionados anteriormente, de esta manera se comprueba que la aplicación sigue funcionando correctamente.
 
-En mi caso, he realizado la integración continua con [Travis](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado) y con [snap-ci](https://snap-ci.com/javiergarridomellado/IV_javiergarridomellado/branch/master) ya que me parecieron sencillos y muy completo.
+En mi caso, he realizado la integración continua con [Travis](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado) y con [snap-ci](https://snap-ci.com/javiergarridomellado/IV_javiergarridomellado/branch/master) ya que me parecieron sencillos y muy completos.
 
 
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/travis.md)
