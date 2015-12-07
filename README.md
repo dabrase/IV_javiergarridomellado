@@ -116,5 +116,5 @@ Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la apli
 
 ## Cambios Realizados
 
-Se ha añade un [fichero]() donde se comentan los cambios más relevantes entre los diferentes hitos para facilitar la corrección de la práctica.
+Se ha añade un [fichero](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/cambios.md) donde se comentan los cambios más relevantes entre los diferentes hitos para facilitar la corrección de la práctica.
 
