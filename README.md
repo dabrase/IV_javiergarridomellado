@@ -116,7 +116,7 @@ De esta manera se ejecuta la aplicación de manera local(obviamente aislado del 
 
 ### Ejecución Online
 
-De esta manera se despliega la aplicación al PAAS Heroku (obviamente es interesante realizar el paso anterior antes de desplegarlo):
+De esta manera se despliega la aplicación en el PAAS Heroku (obviamente es interesante realizar el paso anterior antes de desplegarlo):
 - Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
 - Ejecutar el archivo mediante la orden `./heroku_deploy.sh`
 - Ingresar el user/password de nuestra cuenta Heroku y automaticamente la aplicación queda desplegada.
