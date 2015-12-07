@@ -20,7 +20,7 @@ RUN sudo apt-get -y install libpq-dev
 RUN sudo easy_install pip
 RUN sudo pip install --upgrade pip
 
-#Instalar la app
+#Instalar la aplicacion
 RUN ls
 RUN cd IV_javiergarridomellado/ && ls -l
 RUN cd IV_javiergarridomellado/ && cat requirements.txt
