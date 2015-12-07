@@ -88,11 +88,11 @@ Para crear el entorno de prueba se ha provisto del archivo **docker_install_and_
 
 ## Automatización o Modo de Uso
 
-Para facilitar el uso de la aplicación se han añadido tres [scripts](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/script) de manera que cualquier persona con un conocimento básico pueda probarla en un entorno tanto aislado como online.
+Para facilitar el uso de la aplicación se han añadido tres [scripts](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/scripts) de manera que cualquier persona con un conocimento básico pueda probarla en un entorno tanto aislado como online.
 
 Los pasos a seguir son los siguientes:
 
-- Clonar o copiar el contenido del archivo [docker_install_and_run.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/docker_install_and_run.sh) en un archivo **.sh**
+- Clonar o copiar el contenido del archivo [docker_install_and_run.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/docker_install_and_run.sh) en un archivo **.sh**
 - Dar permisos de ejecución mediante la orden **chmod**, por ejemplo `chmod 777 docker_install_and_run.sh`
 - Ejecutar el archivo mediante la orden `./docker_install_and_run.sh`
 
@@ -100,12 +100,12 @@ Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la apli
 
 ### Ejecución Local
 - Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.
-- Dar permisos de ejecución mediante la orden **chmod** al archivo [run_app.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/run_app.sh), por ejemplo `chmod 777 run_app.sh`
+- Dar permisos de ejecución mediante la orden **chmod** al archivo [run_app.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/run_app.sh), por ejemplo `chmod 777 run_app.sh`
 - Ejecutar el archivo mediante la orden `./run_app.sh`
 - Ingresar en el navegador anfitrión `ip_del_contenedor:8000` , con ello tendremos la aplicación desplegada.
 
 ### Ejecución Online
-- Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
+- Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
 - Ejecutar el archivo mediante la orden `./heroku_deploy.sh`
 - Ingresar el user/password de nuestra cuenta Heroku y automaticamente la aplicación queda desplegada.
 
