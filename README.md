@@ -96,7 +96,7 @@ Los pasos a seguir son los siguientes:
 - Dar permisos de ejecución mediante la orden **chmod**, por ejemplo `chmod 777 docker_install_and_run.sh`
 - Ejecutar el archivo mediante la orden `./docker_install_and_run.sh`
 
-Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la aplicación dentro. Hecho esto, hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
+Con esto nos encontramos dentro de la imagen descargada, la cual tiene la aplicación dentro. Hecho esto, hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
 
 ![dockerrun](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/dockerrun_zpsvewnjp9u.png)
 
@@ -104,7 +104,7 @@ Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la apli
 - Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.
 - Dar permisos de ejecución mediante la orden **chmod** al archivo [run_app.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/run_app.sh), por ejemplo `chmod 777 run_app.sh`
 - Ejecutar el archivo mediante la orden `./run_app.sh`
-- Ingresar en el navegador anfitrión `ip_del_contenedor:8000` , con ello tendremos la aplicación desplegada.
+- Ingresar en el navegador anfitrión `ip_del_contenedor:8000` , con ello tendremos la aplicación lanzada.
 
 ![ifconfig](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/ifconfig_zps6z0uav6o.png)
 
