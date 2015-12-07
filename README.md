@@ -76,7 +76,7 @@ Esta es la aplicación desplegada en Heroku: [https://apuestas.herokuapp.com/](h
 
 ## Entorno de pruebas:[Docker](https://www.docker.com/)
 
-Se usa Docker como plataforma que automatiza el despliegue de la aplicación dentro de contenedores software, de manera que puede probarse en un entorno aislado antes de desplegarla a producción.
+Se usa Docker como plataforma que automatiza el despliegue de la aplicación dentro de contenedores software, de manera que pueda probarse en un entorno aislado antes de desplegarla a producción.
 
 La imagen de la aplicación es la [siguiente](https://hub.docker.com/r/javiergarridomellado/iv_javiergarridomellado/)
 
