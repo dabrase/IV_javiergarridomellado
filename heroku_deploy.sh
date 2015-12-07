@@ -5,6 +5,7 @@ heroku create
 git add .
 git commit -m "heroku deploy"
 git push heroku master
+heroku run python manage.py syncdb --noinput
 heroku ps:scale web=1
 heroku apps:rename ejemplodeploy
 heroku open
