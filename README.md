@@ -84,6 +84,11 @@ Para crear el entorno de prueba se ha provisto del archivo **docker_install_and_
 ```
 ./docker_install_and_run.sh
 ```
+Sino se desea usar el script puede descargarse la imagen directamente ejecutando:
+ ```
+sudo docker run -t -i javiergarridomellado/iv_javiergarridomellado:apuestas /bin/bash
+```
+
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md)
 
 ## Automatización o Modo de Uso
