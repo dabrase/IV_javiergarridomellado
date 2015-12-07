@@ -21,3 +21,21 @@ script:
 Por último una captura de una modificación realizada al código del repositorio:
 
 ![travis](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/travis_zpsjqr6xhcs.png)
+
+# Integración continua con Snap CI
+
+Se añade ademas un proceso de integración continua junto al despliegue en Heroku mediante [Snap-CI](https://snap-ci.com).Desde la interfaz web realizo la siguiente configuración:
+
+![paso1](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snap1_zpsgowrqt6s.png)
+
+![paso2](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snaptest_zpsjmbr7ezk.png)
+
+![paso3](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snapdespliegue_zpsgoc8n8bo.png)
+
+![resultados1](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snappasantest_zpstn0bgbtl.png)
+
+![resultados2](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snaptest2_zps2t6125ue.png)
+
+![resultados3](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/snapdespliegue2_zpsgmdw0np4.png)
+
+Con todo esto queda realizado la integración continua, cada vez que se haga un push al repositorio se pasan los tests y si son satisfactorio se levanta la app.

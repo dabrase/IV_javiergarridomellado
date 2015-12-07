@@ -32,9 +32,9 @@ Resumen:
 
 ##Herramienta de Construcción
 
-Python permite como herramienta de construcción el uso de archivos *manage.py* y *setup.py* , son los que he usado en mi caso, puede verse en travis como lo uso para la construcción y el posterior testeo.
+Python permite como herramienta de construcción el uso del archivo *manage.py* , es el que he usado en mi caso, puede verse en travis y snap-ci como lo uso para la construcción y el posterior testeo.
 
-Además se añaden los archivos [docker_install_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/docker_install_and_run.sh) y [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/heroku_deploy.sh) para la construcción de un entorno seguro (contenedor Docker) y su posterior despliegue automático en el PAAS de Heroku.
+Además se añaden los archivos [docker_install_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/docker_install_and_run.sh), [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/heroku_deploy.sh) y [run_app](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/run_app.sh) para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y arranque de la aplicación en local.
 
 ## Instalación local de la aplicación
 
@@ -59,10 +59,10 @@ Puede verse los correspondientes [tests](https://github.com/javiergarridomellado
 
 ##Integración continua
 
-En este paso se elige un sistema de integración continua de modo que cada cambio que se realice implique una ejecución de los tests mencionados anteriormente, de esta manera se comprueba que la aplicación sigue funcionando correctamente.
+En este paso he elegido dos sistemas de integración continua de modo que cada cambio que se realice implique una ejecución de los tests mencionados anteriormente, de esta manera se comprueba que la aplicación sigue funcionando correctamente.
 
-En mi caso, he realizado la integración continua con [Travis](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado) ya que me pareció sencillo y muy completo.
-Se ha usado Travis para la integración continua ya que soporta el lenguaje de programación utilizado y permite testear el repositorio de manera facil.
+En mi caso, he realizado la integración continua con [Travis](https://travis-ci.org/javiergarridomellado/IV_javiergarridomellado) y con [snap-ci](https://snap-ci.com/javiergarridomellado/IV_javiergarridomellado/branch/master) ya que me parecieron sencillos y muy completo.
+
 
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/travis.md)
 
@@ -85,6 +85,29 @@ Para crear el entorno de prueba se ha provisto del archivo **docker_install_and_
 ./docker_install_and_run.sh
 ```
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md)
+
+## Automatización o Modo de Uso
+
+Para facilitar el uso de la aplicación se han añadido tres [scripts](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/script) de manera que cualquier persona con un conocimento básico pueda probarla en un entorno tanto aislado como online.
+
+Los pasos a seguir son los siguientes:
+
+- Clonar o copiar el contenido del archivo [docker_install_and_run.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/docker_install_and_run.sh) en un archivo **.sh**
+- Dar permisos de ejecución mediante la orden **chmod**, por ejemplo `chmod 777 docker_install_and_run.sh`
+- Ejecutar el archivo mediante la orden `./docker_install_and_run.sh`
+
+Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la aplicación dentro.Hecho esto hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
+
+### Ejecución Local
+- Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.
+- Dar permisos de ejecución mediante la orden **chmod** al archivo [run_app.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/run_app.sh), por ejemplo `chmod 777 run_app.sh`
+- Ejecutar el archivo mediante la orden `./run_app.sh`
+- Ingresar en el navegador anfitrión `ip_del_contenedor:8000` , con ello tendremos la aplicación desplegada.
+
+### Ejecución Online
+- Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
+- Ejecutar el archivo mediante la orden `./heroku_deploy.sh`
+- Ingresar el user/password de nuestra cuenta Heroku y automaticamente la aplicación queda desplegada.
 
 ##Generacion de Documentación
 - Ingresar en el directorio **/apu**
