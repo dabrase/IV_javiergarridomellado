@@ -34,7 +34,7 @@ Resumen:
 
 Python permite como herramienta de construcción el uso del archivo *manage.py* , es el que he usado en mi caso, puede verse en travis y snap-ci como lo uso para la construcción y el posterior testeo.
 
-Además se añaden los archivos [docker_install_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/docker_install_and_run.sh), [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/heroku_deploy.sh) y [run_app](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/script/run_app.sh) para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y el arranque de la aplicación en local.
+Además se añaden los archivos [docker_install_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/docker_install_and_run.sh), [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh) y [run_app](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/run_app.sh) para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y el arranque de la aplicación en local.
 
 ## Instalación local de la aplicación
 
