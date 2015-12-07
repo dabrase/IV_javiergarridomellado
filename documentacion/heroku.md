@@ -71,7 +71,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 ```
-- En **wsgi.py** poner lo siguiente:
+- En el archivo **wsgi.py** hay que poner lo siguiente:
 ```
 import os
 
