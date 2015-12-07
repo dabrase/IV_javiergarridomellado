@@ -96,7 +96,7 @@ Los pasos a seguir son los siguientes:
 - Dar permisos de ejecución mediante la orden **chmod**, por ejemplo `chmod 777 docker_install_and_run.sh`
 - Ejecutar el archivo mediante la orden `./docker_install_and_run.sh`
 
-Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la aplicación dentro. Hecho esto hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
+Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la aplicación dentro. Hecho esto, hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
 
 ### Ejecución Local
 - Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.
@@ -114,5 +114,7 @@ Con esto nos encontraremos dentro de la imagen descargada, la cual tiene la apli
 - Ejecutar en el terminal **epydoc --html views.py models.py**
 
 
+## Cambios Realizados
 
+Se ha añade un [fichero]() donde se comentan los cambios más relevantes entre los diferentes hitos para facilitar la corrección de la práctica.
 
