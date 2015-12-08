@@ -119,7 +119,7 @@ De esta manera se ejecuta la aplicación de manera local(obviamente aislado del 
 
 ![nav](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/nav_zpsx1vfvbbm.png)
 
-### Ejecución Online
+### Despliegue en Paas
 
 De esta manera se despliega la aplicación en el PaaS Heroku (obviamente es interesante realizar el paso anterior antes de desplegarlo):
 - Dar permisos de ejecución mediante la orden **chmod** al archivo [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh), por ejemplo `chmod 777 heroku_deploy.sh`
