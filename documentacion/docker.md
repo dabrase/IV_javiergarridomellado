@@ -7,15 +7,14 @@ FROM ubuntu:latest
 #Autor
 MAINTAINER Francisco Javier Garrido Mellado <franciscojaviergarridomellado@gmail.com>
 
-#Actualizar Sistema Base
+#Actualización del Sistema 
 RUN sudo apt-get -y update
 
-#Descargar aplicacion
+#Descarga de la aplicación
 RUN sudo apt-get install -y git
 RUN sudo git clone https://github.com/javiergarridomellado/IV_javiergarridomellado.git
 
-# Instalar Python y PostgreSQL
-#RUN sudo apt-get install -y python
+# Instalación de Python y PostgreSQL
 RUN sudo apt-get install -y python-setuptools
 RUN sudo apt-get -y install python-dev
 RUN sudo apt-get -y install build-essential
@@ -24,14 +23,13 @@ RUN sudo apt-get -y install libpq-dev
 RUN sudo easy_install pip
 RUN sudo pip install --upgrade pip
 
-#Instalar la app
-RUN ls
-RUN cd IV_javiergarridomellado/ && ls -l
-RUN cd IV_javiergarridomellado/ && cat requirements.txt
+#Instalación de dependencias de la aplicacion
+
 RUN cd IV_javiergarridomellado/ && sudo pip install -r requirements.txt
 
-#Migraciones
+#Sincronización de la base de datos
 RUN cd IV_javiergarridomellado/ && python manage.py syncdb --noinput
+
 ```
 Después en la web de [Docker Hub](https://hub.docker.com/), se crea un "Automated Build" sobre el repositorio del proyecto, con esto se comienza a crear la imagen.
 
