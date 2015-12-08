@@ -26,8 +26,5 @@ RUN cd IV_javiergarridomellado/ && sudo pip install -r requirements.txt
 #Sincronización de la base de datos
 RUN cd IV_javiergarridomellado/ && python manage.py syncdb --noinput
 
-##prueba
 
-echo 'chmod 755 /IV_javiergarridomellado/run_app.sh' >> /etc/rc.local
-echo './IV_javiergarridomellado/run_app.sh' >> /etc/rc.local
 
