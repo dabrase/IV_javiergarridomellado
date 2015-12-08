@@ -11,7 +11,6 @@ RUN sudo apt-get install -y git
 RUN sudo git clone https://github.com/javiergarridomellado/IV_javiergarridomellado.git
 
 # Instalación de Python y PostgreSQL
-#RUN sudo apt-get install -y python
 RUN sudo apt-get install -y python-setuptools
 RUN sudo apt-get -y install python-dev
 RUN sudo apt-get -y install build-essential
@@ -20,10 +19,10 @@ RUN sudo apt-get -y install libpq-dev
 RUN sudo easy_install pip
 RUN sudo pip install --upgrade pip
 
-#Instalar la aplicacion
+#Instalación de dependencias de la aplicacion
 
 RUN cd IV_javiergarridomellado/ && sudo pip install -r requirements.txt
 
-#Migraciones
+#Sincronización de la base de datos
 RUN cd IV_javiergarridomellado/ && python manage.py syncdb --noinput
 
