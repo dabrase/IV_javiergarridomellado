@@ -72,6 +72,7 @@ Me he decantado por Heroku por la facilidad para el despliegue y porque es la qu
 Esta es la aplicación desplegada en Heroku: [https://apuestas.herokuapp.com/](https://apuestas.herokuapp.com/)
 
 Se ha automatizado el despliegue en heroku con el script [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh)
+
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/heroku.md)
  
 
