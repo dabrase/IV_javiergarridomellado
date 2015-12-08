@@ -71,6 +71,7 @@ En mi caso, he realizado la integración continua con [Travis](https://travis-ci
 Me he decantado por Heroku por la facilidad para el despliegue y porque es la que pedían en los ejercicios de la relación.
 Esta es la aplicación desplegada en Heroku: [https://apuestas.herokuapp.com/](https://apuestas.herokuapp.com/)
 
+Se ha automatizado el despliegue en heroku con el script [heroku_deploy](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh)
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/heroku.md)
  
 
@@ -143,3 +144,38 @@ De esta manera se despliega la aplicación en el PaaS Heroku (obviamente es inte
 
 Se ha añade un [fichero](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/cambios.md) donde se comentan los cambios más relevantes entre los diferentes hitos para facilitar la corrección de la práctica.
 
+## Comandos Básicos
+
+###Instalar dependencias
+```
+$ pip install -r requirements.txt
+```
+
+###Sincronizar base de datos
+```
+$ python manage.py migrate --noinput
+```
+
+###Test
+```
+$ python manage.py test
+```
+
+###Arrancar aplicación( 2 opciones )
+```
+$ ./run_app.sh
+```
+
+```
+$ python manage.py runserver
+```
+
+###Despliegue en heroku
+```
+$ ./heroku_deploy.sh
+```
+
+###Instalar imagen docker(Contenedor Ubuntu+Aplicación)
+```
+$ ./docker_install_and_run.sh
+```
