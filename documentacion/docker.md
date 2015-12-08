@@ -43,7 +43,7 @@ Puede verse a continuación el repositorio enlazado y la construcción automáti
 
 Por tanto, cada cambio que se realice al repositorio de Github se integra de manera automática y en tiempo real a la imagen de Docker Hub.Cada vez que se haga un "git push" llevará asociado un rebuild de la imagen.
 
-Para crear el entorno de pruebas en nuestro ordenador, hay que ejecutar el archivo **docker_install_and_run.sh**(no olvidar dar permisos de ejecución con chmod al archivo):
+Para crear el entorno de pruebas en nuestro ordenador se ha provisto de un script en la ruta `IV_javiergarridomellado/scripts`.Solo hay que ejecutar el archivo **docker_install_and_run.sh**(no olvidar dar permisos de ejecución con chmod al archivo):
 ```
 ./docker_install_and_run.sh
 ```
@@ -54,7 +54,7 @@ sudo apt-get install -y docker.io
 sudo docker pull javiergarridomellado/iv_javiergarridomellado:apuestas
 sudo docker run -t -i javiergarridomellado/iv_javiergarridomellado:apuestas /bin/bash
 ```
-Esto lo que hace es instalar Docker, crear el contenedor con la aplicación instalada en él y arrancar el entorno de pruebas.Solo queda ingresar en el directorio `IV_javiergarridomellado` y ejecutar `python manage.py runserver 0.0.0.0:1111`.
+Esto lo que hace es instalar Docker, crear el contenedor con la aplicación instalada en él y arrancar el entorno de pruebas.Solo queda ingresar en el directorio `IV_javiergarridomellado` y ejecutar `python manage.py runserver 0.0.0.0:1111`(puede usarse otro puerto).Otra manera de ejecutar la aplicación es ejecutar el archivo `run_app.sh` tal y como se explica en el Readme principal.
 Hecho esto, solo queda acceder al navegador anfitrión e introducir la IP del contenedor Docker.
 
 ![automa](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/automa_zpsajhntukm.png)
