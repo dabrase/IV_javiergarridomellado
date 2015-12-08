@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo apt-get install wget
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh   # descargar herramienta heroku CLI
 cd ..
