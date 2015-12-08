@@ -31,7 +31,7 @@ RUN cd IV_javiergarridomellado/ && sudo pip install -r requirements.txt
 RUN cd IV_javiergarridomellado/ && python manage.py syncdb --noinput
 
 ```
-Después en la web de [Docker Hub](https://hub.docker.com/), se crea un "Automated Build" sobre el repositorio del proyecto, con esto se comienza a crear la imagen.
+Después en la web de [Docker Hub](https://hub.docker.com/), se pulsa en "Create" y despues en "Create Automated Build" sobre el repositorio del proyecto, con esto se comienza a crear la imagen.
 
 Puede verse a continuación el repositorio enlazado y la construcción automática de la imagen:
 
