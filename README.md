@@ -103,6 +103,15 @@ sudo docker run -t -i javiergarridomellado/iv_javiergarridomellado:apuestas /bin
 
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md)
 
+
+## Automatización o Modo de Uso ( Online )
+
+Consultar el apartado de [Despliegue Remoto](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/fabfile.py).
+
+Notar que se ha añadido un script [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh) el cual despliega la aplicación en el PaaS Heroku siempre y cuando las pruebas en el entorno seguro de Docker hayan sido satisfactorias. Dicho script se encuentra en `IV_javiergarridomellado/scripts`.
+
+
+
 ## Automatización o Modo de Uso ( Local )
 
 Para facilitar el uso de la aplicación se han añadido tres [scripts](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/scripts) de manera que cualquier persona con un conocimento básico pueda probarla en un entorno tanto aislado como online.

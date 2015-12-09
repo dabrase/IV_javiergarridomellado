@@ -22,7 +22,7 @@ El siguiente paso es indicarle a la máquina virtual las reglas de entrada y sal
 
 ![reglassalida](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/reglasalida_zpsqlohycpd.png)
 
-Falta definir el NAT para el contenedor(explicado en el apartado de [fabric](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/fabfile.md), esto se hará cuando se disponga de él. Si queda dudas sobre como configurar las reglas puede consultarse el siguiente [tutorial](https://azure.microsoft.com/es-es/documentation/articles/virtual-networks-create-nsg-arm-pportal/).
+Falta definir el NAT para el contenedor (explicado en el apartado de [fabric](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/fabfile.md)), esto se hará cuando se disponga de él. Si queda dudas sobre como configurar las reglas puede consultarse el siguiente [tutorial](https://azure.microsoft.com/es-es/documentation/articles/virtual-networks-create-nsg-arm-pportal/).
 
 ###Configurar nombre de DNS
 
