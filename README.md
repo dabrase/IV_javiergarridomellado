@@ -106,7 +106,7 @@ sudo docker run -t -i javiergarridomellado/iv_javiergarridomellado:apuestas /bin
 
 ## Automatización o Modo de Uso ( Online )
 
-Consultar el apartado de [Despliegue Remoto](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/fabfile.py).
+Consultar el apartado de [Despliegue Remoto](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/fabfile.md).
 
 Notar que se ha añadido un script [heroku_deploy.sh](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/scripts/heroku_deploy.sh) el cual despliega la aplicación en el PaaS Heroku siempre y cuando las pruebas en el entorno seguro de Docker hayan sido satisfactorias. Dicho script se encuentra en `IV_javiergarridomellado/scripts`.
 
@@ -123,7 +123,7 @@ Los pasos a seguir son los siguientes:
 - Ejecutar el archivo mediante la orden `./docker_install_and_run.sh`
 
 Con esto nos encontramos dentro de la imagen descargada, la cual tiene la aplicación dentro. Hecho esto, hay que teclear `cd IV_javiergarridomellado/scripts` y se nos abre un abanico de dos posibilidades:
-
+gi
 ![dockerrun](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/dockerrun_zpsvewnjp9u.png)
 
 ### Ejecución 
