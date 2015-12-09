@@ -82,7 +82,9 @@ Con la ayuda de [Fabric](http://www.fabfile.org/), que es una biblioteca de Pyth
 
 La creación del entorno Docker en Azure usando el archivo [fabfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/fabfile.py) puede consultarse [aqui](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/fabfile.md).
 
-Como he creado la máquina virtual puede [consultarse](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/azure.md), la aplicación ( del Docker ) desplegada es la siguiente [http://apuestas.westeurope.cloudapp.azure.com/](http://apuestas.westeurope.cloudapp.azure.com/).
+Como he creado la máquina virtual puede [consultarse](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/azure.md).
+
+La aplicación ( del Docker ) desplegada es la siguiente [http://apuestas.westeurope.cloudapp.azure.com/](http://apuestas.westeurope.cloudapp.azure.com/).
 
 ## Entorno de pruebas:[Docker](https://www.docker.com/)
 

@@ -22,7 +22,7 @@ def install_run():
 	run('sudo docker run -i -t javiergarridomellado/iv_javiergarridomellado:apuestas /bin/bash')
 ```
 
-Puede verse en el codigo que lo que se hace es ejecutar cuatro comandos con solo una llamada, por tanto, se actualizaría el sistema base, se instalaría docker, se descargaría la imagen y se arrancaría dicha contenedor. El comando a usar es el siguiente (el archivo fabfile se encuentra en nuestra máquina y solo sirve para indicar al SSH que tiene que hacer):
+Puede verse en el codigo que lo que se hace es ejecutar cuatro comandos con solo una llamada, por tanto, se actualizaría el sistema base, se instalaría docker, se descargaría la imagen y se arrancaría dicho contenedor. El comando a usar es el siguiente (el archivo fabfile se encuentra en nuestra máquina y solo sirve para indicar al SSH que tiene que hacer):
 ```
 fab -H javiergarridomellado@apuestas.westeurope.cloudapp.azure.com install_run
 ```
