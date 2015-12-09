@@ -80,9 +80,9 @@ Se ha automatizado el despliegue en heroku con el script [heroku_deploy](https:/
 
 Con la ayuda de [Fabric](http://www.fabfile.org/), que es una biblioteca de Python para automatizar tareas de administración haciendo uso de SSH, he creado un entorno de pruebas en una [máquina virtual de Azure](https://azure.microsoft.com/es-es/).
 
-La creación del entorno Docker en Azure usando el archivo [fabfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/fabfile.py) puede consultarse [aqui](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md).
+La creación del entorno Docker en Azure usando el archivo [fabfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/fabfile.py) puede consultarse [aqui](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/fabfile.md).
 
-Como he creado la máquina virtual puede [consultarse](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md), la aplicación ( del Docker ) desplegada es la siguiente [http://apuestas.westeurope.cloudapp.azure.com/](http://apuestas.westeurope.cloudapp.azure.com/).
+Como he creado la máquina virtual puede [consultarse](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/azure.md), la aplicación ( del Docker ) desplegada es la siguiente [http://apuestas.westeurope.cloudapp.azure.com/](http://apuestas.westeurope.cloudapp.azure.com/).
 
 ## Entorno de pruebas:[Docker](https://www.docker.com/)
 
