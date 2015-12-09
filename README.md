@@ -76,7 +76,7 @@ Se ha automatizado el despliegue en heroku con el script [heroku_deploy](https:/
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/heroku.md)
  
 
-## Despliegue remoto:Fabric
+## Despliegue remoto: Fabric
 
 Con la ayuda de [Fabric](http://www.fabfile.org/), que es una biblioteca de Python para automatizar tareas de administración haciendo uso de SSH, he creado un entorno de pruebas en una [máquina virtual de Azure](https://azure.microsoft.com/es-es/).
 
@@ -101,7 +101,7 @@ sudo docker run -t -i javiergarridomellado/iv_javiergarridomellado:apuestas /bin
 
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/docker.md)
 
-## Automatización o Modo de Uso
+## Automatización o Modo de Uso ( Local )
 
 Para facilitar el uso de la aplicación se han añadido tres [scripts](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/scripts) de manera que cualquier persona con un conocimento básico pueda probarla en un entorno tanto aislado como online.
 
@@ -115,7 +115,7 @@ Con esto nos encontramos dentro de la imagen descargada, la cual tiene la aplica
 
 ![dockerrun](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/dockerrun_zpsvewnjp9u.png)
 
-### Ejecución Local
+### Ejecución 
 
 De esta manera se ejecuta la aplicación de manera local(obviamente aislado del sistema anfitrión ya que se encuentra dentro del contenedor):
 - Ejecutar la orden `ifconfig` para conocer la IP que hay que poner en el navegador.
