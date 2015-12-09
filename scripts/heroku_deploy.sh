@@ -2,13 +2,13 @@
 sudo apt-get install wget
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh   # descargar herramienta heroku CLI
 cd ..
-heroku login
-heroku create
-git add .
-git commit -m "heroku deploy"
-git push heroku master
-heroku run python manage.py syncdb --noinput
-heroku ps:scale web=1
+sudo heroku login
+sudo heroku create
+sudo git add .
+sudo git commit -m "heroku deploy"
+sudo git push heroku master
+sudo heroku run python manage.py syncdb --noinput
+sudo heroku ps:scale web=1
 #renombrada con este nombre para no machacar la que ya tengo funcionando
-heroku apps:rename ejemplodeploy
-heroku open
+sudo heroku apps:rename ejemplodeploy
+sudo heroku open
