@@ -47,7 +47,7 @@ fab -H javiergarridomellado@apuestas.westeurope.cloudapp.azure.com install_run
 
 ![run_app](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/run_app_zpser9nqw4e.png)
 
-- Por último, hay que realizar un simple NAT para que las peticiones a la máquina virtual de Azure sean respondidas con el contenedor, esto se hace de la siguiente manera:
+- Por último, hay que realizar un simple NAT para que las peticiones a la máquina virtual de Azure sean respondidas por el contenedor, esto se hace de la siguiente manera:
 ```
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination 172.17.0.3:8000
 ```
