@@ -160,7 +160,7 @@ La url donde puede verse la aplicación la proporciona Azure al crear la máquin
 ./create_and_run.sh
 ```
 
-**Nota: Para ejecutar el script es necesario tener en el mismo nivel los archivos [Vagrantfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/Vagrantfile),[ansible_hosts](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/ansible_hosts) e [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/iv.yml) que se encuentran en el siguiente [directorio](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/VagrantAzure)**
+**Nota: Para ejecutar el script es necesario tener en el mismo nivel los archivos [Vagrantfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/Vagrantfile), [ansible_hosts](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/ansible_hosts) e [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/iv.yml) que se encuentran en el siguiente [directorio](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/VagrantAzure)**
 
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/despliegueAzure.md)
 
@@ -172,7 +172,7 @@ Debido a que no todo el mundo dispone de cuenta en Azure facilito la opción del
 ./create_and_run.sh
 ```
 
-**Nota: Para ejecutar el script es necesario tener en el mismo nivel los archivos [Vagrantfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/Vagrantfile),[ansible_hosts](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/ansible_hosts) e [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/iv.yml) que se encuentran en el siguiente [directorio](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/VagrantLocal)**
+**Nota: Para ejecutar el script es necesario tener en el mismo nivel los archivos [Vagrantfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/Vagrantfile), [ansible_hosts](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/ansible_hosts) e [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/iv.yml) que se encuentran en el siguiente [directorio](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/VagrantLocal)**
 
 [Más información](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/documentacion/despliegueVB.md)
 
