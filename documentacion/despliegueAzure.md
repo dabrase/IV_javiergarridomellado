@@ -58,7 +58,8 @@ Vagrant.configure('2') do |config|
       azure.mgmt_endpoint = 'https://management.core.windows.net'
       azure.subscription_id = '477d87d6-b8d0-4025-8c1f-a3de5c520c99'
       azure.vm_image = 'b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04_2-LTS-amd64-server-20150506-en-us-30GB'
-      azure.vm_name = 'restaurante' 
+      azure.vm_name = 'restaurante'
+      azure.cloud_service_name = 'apuestas'  
       azure.vm_password = 'Clave#Javi#1'
       azure.vm_location = 'Central US' 
       azure.ssh_port = '22'
@@ -76,7 +77,7 @@ end
 
 En el primer bloque lo que hago es indicarle el box que va a usar, en este caso Azure, que tenga acceso a Internet mediante una red pública, una red privada, que haga reenvio de puertos y le aplico como hostname "localhost" para que Ansible pueda conectar con la máquina.
 
-En el segundo bloque se configuran las propiedades de mi servicio de Azure, se le indica la ruta del certificado de Azure, el "endpoint", la imagen Ubuntu que va a usar, el nombre de la máquina, la password,etc.
+En el segundo bloque se configuran las propiedades de mi servicio de Azure, se le indica la ruta del certificado de Azure, el "endpoint", la imagen Ubuntu que va a usar, el nombre de la máquina, el nombre del cloud,la password,etc.
 
 Por último, se ejecuta el "playbook" de Ansible que se llama [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/iv.yml):
 ```
