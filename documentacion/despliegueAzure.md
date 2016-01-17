@@ -115,7 +115,7 @@ Para realizar el despliegue basta con ejecutar [create_and_run](https://github.c
 vagrant box add azure https://github.com/msopentech/vagrant-azure/raw/master/dummy.box
 vagrant up --provider=azure
 ```
-En el se le indica que debe descargar la "box" de Azure y después realizar un "vagrant up". Ejecutado esto vemos como se crea la máquina y provisiona. 
+En él se le indica que debe descargar la "box" de Azure y después realizar un "vagrant up". Ejecutado esto vemos como se crea la máquina y se provisiona. 
 
 ![ansible](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/vagrantupazure_zpscx7wl4dk.png)
 
