@@ -151,7 +151,7 @@ De esta manera se despliega la aplicación en el PaaS Heroku (obviamente es inte
 
 ![user](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/her_zpsp25ztb4u.png)
 
-
+### Despliegue en Iaas
 
 
 
@@ -199,3 +199,6 @@ $ ./heroku_deploy.sh
 ```
 $ ./docker_install_and_run.sh
 ```
+
+
+
