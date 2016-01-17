@@ -118,6 +118,15 @@ El enlace es el siguiente [http://apuestas.cloudapp.net/](http://apuestas.clouda
 
 
 
+*Nota: Para su correcto funcionamiento es necesario tener instalado lo siguiente :*
+```
+$ sudo apt-get install nodejs-legacy
+$ sudo apt-get install npm
+$ sudo npm install -g azure-cli
+$ sudo pip install paramiko PyYAML jinja2 httplib2 ansible
+$ sudo dpkg -i vagrant_1.8.1_x86_64.deb
+$ vagrant plugin install vagrant-azure
+```
 
 
 
