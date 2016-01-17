@@ -109,9 +109,17 @@ Por último, se ejecuta el "playbook" de Ansible que se llama [iv.yml](https://g
 
 Aquí le indico como hosts "localhost" ya que esto se ejecuta dentro de la máquina.En los task se actualiza el sistema, se instalan paquetes necesarios, se instala PostgreSQL, se clona el repositorio y por último se ejecuta la aplicación.Se usa "nohup" para que siga ejecutando la aplicación cuando se cierre el terminal.
 
+Para realizar el despliegue basta con ejecutar [create_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/create_and_run.sh) que consta de lo siguiente:
+```
+#!/bin/bash
+vagrant box add azure https://github.com/msopentech/vagrant-azure/raw/master/dummy.box
+vagrant up --provider=azure
+```
+En el se le indica que debe descargar la "box" de Azure y después realizar un "vagrant up". Ejecutado esto vemos como se crea la máquina y provisiona. 
+
 ![ansible](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/vagrantupazure_zpscx7wl4dk.png)
 
-El enlace es el siguiente [http://apuestas.cloudapp.net/](http://apuestas.cloudapp.net/)
+El enlace a la aplicación es el siguiente [http://apuestas.cloudapp.net/](http://apuestas.cloudapp.net/)
 
 ![appdespl](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/vagrantazureprac_zps0btpmjnn.png)
 
