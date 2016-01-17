@@ -154,7 +154,7 @@ De esta manera se despliega la aplicación en el PaaS Heroku (obviamente es inte
 ## Despliegue en un Iaas: Azure
 
 He usado Azure como IaaS. La aplicación se despliega automáticamente ejecutando el script [create_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/create_and_run.sh) gracias a Vagrant y Ansible. Se recomienda antes definir la variable de entorno ejecutando `export ANSIBLE_HOSTS=~/ruta/ansible_hosts`.
-La url donde puede verse la aplicación la proporciona Azure al crear la máquina en la nube.Se pondrá enlace conforme se acerque la fecha.
+La url donde puede verse la aplicación la proporciona Azure al crear la máquina en la nube y es la siguiente [apuestas.cloudapp.net](apuestas.cloudapp.net)( Ahora se encuentra apagada).
 
 **Nota: Para ejecutar el script es necesario tener en el mismo nivel los archivos [Vagrantfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/Vagrantfile),[ansible_hosts](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/ansible_hosts) e [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/iv.yml) que se encuentran en el siguiente [directorio](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/VagrantAzure)**
 
