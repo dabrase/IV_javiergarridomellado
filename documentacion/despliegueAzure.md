@@ -108,13 +108,16 @@ Por último, se ejecuta el "playbook" de Ansible que se llama [iv.yml](https://g
 ```
 
 Aquí le indico como hosts "localhost" ya que esto se ejecuta dentro de la máquina.En los task se actualiza el sistema, se instalan paquetes necesarios, se instala PostgreSQL, se clona el repositorio y por último se ejecuta la aplicación.Se usa "nohup" para que siga ejecutando la aplicación cuando se cierre el terminal.
+
+![ansible](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/vagrantupazure_zpscx7wl4dk.png)
+
 El enlace es el siguiente [http://apuestas.cloudapp.net/](http://apuestas.cloudapp.net/)
 
 ![appdespl](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/vagrantazureprac_zps0btpmjnn.png)
 
-A continuación algunas imágenes del playbook,conexión SSH, etc:
 
-![ansible](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/vagrantupazure_zpscx7wl4dk.png)
+
+
 
 
 
