@@ -151,7 +151,22 @@ De esta manera se despliega la aplicación en el PaaS Heroku (obviamente es inte
 
 ![user](http://i1045.photobucket.com/albums/b457/Francisco_Javier_G_M/her_zpsp25ztb4u.png)
 
-### Despliegue en Iaas
+## Despliegue en Iaas: Azure
+
+He usado Azure como IaaS. La aplicación se despliega automáticamente ejecutando el script [create_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/create_and_run.sh) gracias a Vagrant y Ansible. Se recomienda antes define la variable de entorno ejecutando `export ANSIBLE_HOSTS=~/ruta/ansible_hosts`.
+La url donde puede verse la proporciona Azure al crear la máquina en la nube.
+
+**Nota: Para ejecutar el script es necesario tener en el mismo nivel los archivos [Vagrantfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/Vagrantfile),ansible_hosts(https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/ansible_hosts) e [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantAzure/iv.yml) que se encuentran en el siguiente [directorio](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/VagrantAzure)**
+
+[Más información]()
+
+### Despliegue en VirtualBox
+
+Debido a que no todo el mundo dispone de cuenta en Azure facilito la opción del despliegue en local gracias a VirtualBox, para ello al igual que antes se define la variable de entorno `export ANSIBLE_HOSTS=~/ruta/ansible_hosts` y ya solo basta con ejecutar el scrip [create_and_run](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/create_and_run.sh).
+
+**Nota: Para ejecutar el script es necesario tener en el mismo nivel los archivos [Vagrantfile](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/Vagrantfile),ansible_hosts(https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/ansible_hosts) e [iv.yml](https://github.com/javiergarridomellado/IV_javiergarridomellado/blob/master/VagrantLocal/iv.yml) que se encuentran en el siguiente [directorio](https://github.com/javiergarridomellado/IV_javiergarridomellado/tree/master/VagrantLocal)**
+
+[Más información]()
 
 
 
